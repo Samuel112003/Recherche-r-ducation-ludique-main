@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Synthèse et ancrage scientifique v3 — Étape 1</title>
+<style>
+  @page { size: A4; margin: 20mm 22mm 20mm 22mm; }
+  :root {
+    --ink: #1f2328;
+    --muted: #5b6370;
+    --accent: #2f5d62;
+    --accent-soft: #eef4f4;
+    --rule: #d6dcdf;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 10.6pt;
+    line-height: 1.55;
+    color: var(--ink);
+    margin: 0;
+  }
+  header { margin-bottom: 18px; }
+  .kicker {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 8.5pt;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 4px;
+  }
+  h1 {
+    font-size: 21pt;
+    line-height: 1.2;
+    margin: 0 0 4px;
+    font-weight: normal;
+  }
+  .subtitle { color: var(--muted); margin: 0; font-style: italic; }
+  .scope {
+    background: var(--accent-soft);
+    border-left: 3px solid var(--accent);
+    padding: 9px 13px;
+    margin: 16px 0 6px;
+    font-size: 9.8pt;
+  }
+  h2 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 13pt;
+    color: var(--accent);
+    margin: 22px 0 6px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid var(--rule);
+    break-after: avoid;
+  }
+  h3 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 10.6pt;
+    margin: 14px 0 3px;
+    break-after: avoid;
+  }
+  p { margin: 0 0 8px; text-align: justify; hyphens: auto; }
+  .src { color: var(--muted); }
+  .takeaway {
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    padding: 8px 12px;
+    margin: 8px 0 10px;
+    font-size: 10pt;
+    break-inside: avoid;
+  }
+  .takeaway strong { color: var(--accent); }
+  table.bilan {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 8px 0 12px;
+    font-size: 9.8pt;
+    break-inside: avoid;
+  }
+  table.bilan th {
+    font-family: "Segoe UI", Arial, sans-serif;
+    text-align: left;
+    font-size: 9pt;
+    color: var(--accent);
+    border-bottom: 1.5px solid var(--accent);
+    padding: 4px 8px;
+    width: 50%;
+  }
+  table.bilan td { vertical-align: top; padding: 6px 8px; }
+  table.bilan ul { margin: 0; padding-left: 16px; }
+  table.bilan li { margin-bottom: 5px; }
+  .refs { font-size: 9pt; line-height: 1.4; }
+  .refs p { text-align: left; padding-left: 14px; text-indent: -14px; margin-bottom: 5px; }
+  .note { font-size: 8.8pt; color: var(--muted); }
+</style>
+</head>
+<body>
+
+<header>
+  <p class="kicker">Rééducation ludique de la main · Étape 1 · version 3 · novembre 2026</p>
+  <h1>Les troubles de la main et les défis de leur rééducation</h1>
+  <p class="subtitle">Synthèse et ancrage scientifique du projet</p>
+  <div class="scope">
+    Cette synthèse pose le contexte clinique du projet. Elle décrit les troubles visés, puis les difficultés
+    qui rendent leur rééducation si fragile. La gamification, la réponse que nous étudions, fera l'objet des
+    étapes suivantes. Chaque affirmation renvoie à une source du corpus. Ce que le corpus ne permet pas
+    d'établir est dit explicitement.
+  </div>
+</header>
+
+<h2>1. Les troubles de la main visés</h2>
+
+<p>Le projet s'adresse à trois familles de patients : ceux qui souffrent d'un trouble musculosquelettique,
+ceux qui se sont blessés et ceux qui ont été opérés. Plutôt que d'en dresser l'inventaire, nous retenons
+pour chaque famille un cas représentatif et bien documenté.</p>
+
+<h3>1.1 Les troubles musculosquelettiques du membre supérieur</h3>
+
+<p>Les troubles musculosquelettiques (TMS) touchent les tissus mous : muscles, tendons et nerfs. Ils sont
+dus à des contraintes répétées ou soutenues pendant des semaines, voire des années, et associent le plus
+souvent une douleur, parfois intense, à une gêne pour bouger ou tenir un objet. Au poignet et à la main, on
+retrouve surtout les tendinites des fléchisseurs et des extenseurs, la tendinite de De Quervain, le doigt à
+ressaut, le syndrome du canal carpien et la compression du nerf ulnaire <span class="src">(INRS, 2011)</span>.</p>
+
+<p>Leur poids est considérable. En 2012, les TMS représentaient plus des trois quarts des maladies
+professionnelles reconnues en France (42 148 cas), et 45 % d'entre eux touchaient le poignet et la main. Ils
+ont fait perdre 10,4 millions de journées de travail en 2011. Le pronostic est souvent favorable, mais
+« le traitement s'avère souvent long et la guérison pas toujours assurée » <span class="src">(INRS, 2011)</span>.</p>
+
+<h3>1.2 Le syndrome du canal carpien</h3>
+
+<p>Le canal carpien représente à lui seul plus d'un tiers des TMS du membre supérieur reconnus
+<span class="src">(INRS, 2011)</span>. Il touche environ 3 personnes sur 1 000 chaque année en France, surtout
+des femmes autour de 50 ans <span class="src">(HAS, 2013)</span>. En première intention, on associe une
+orthèse, des infiltrations et de la kinésithérapie : mobilisations, glissements du nerf et conseils pour
+adapter les gestes. L'effet de ces exercices reste discuté. En 2012, la revue Cochrane de Page et al. (16
+essais) ne trouvait que des preuves « limitées et de très faible qualité ». Une méta-analyse plus récente
+conclut que les techniques de glissement du nerf réduisent les symptômes. Ses auteurs appellent toutefois à
+la prudence, car les essais sont hétérogènes, et dans tous les cas c'est un kinésithérapeute qui appliquait
+les techniques <span class="src">(Zaheer &amp; Ahmed, 2023, 12 essais, 1 003 participants)</span>. Le bénéfice
+est donc plausible, mais pas solidement établi.</p>
+
+<p>Après chirurgie, le poignet n'est pas immobilisé et la HAS fixe comme objectif une « récupération rapide
+par une auto-rééducation ». Les preuves sont ici encore plus minces. La revue Cochrane de Peters et al.
+(2016), qui porte sur 22 essais et 1 521 participants, juge les études de très faible qualité et conclut
+qu'il faut informer les patients du peu de preuves d'efficacité de la rééducation postopératoire. Elle
+contient pourtant une indication utile pour le projet : dans les deux essais qui les comparent, un programme
+d'exercices à domicile ne fait pas moins bien qu'une kinésithérapie encadrée.</p>
+
+<p>L'enjeu est aussi professionnel. Parmi les opérés de 18 à 59 ans, 55 % ont un arrêt de travail. Plus d'un
+tiers d'entre eux dépassent la durée recommandée de 56 jours, et ces arrêts longs représentent à eux seuls
+71 % du coût des indemnités <span class="src">(HAS, 2013)</span>.</p>
+
+<h3>1.3 Une blessure : la section d'un tendon fléchisseur</h3>
+
+<p>Après la réparation d'un tendon fléchisseur, la rééducation pèse lourd dans le résultat. Elle limite les
+adhérences, rend au tendon sa capacité à glisser et aide les doigts à retrouver leur amplitude
+<span class="src">(Groth, 2004)</span>. Toute la difficulté est de doser la charge. Trop faible, elle laisse
+le tendon se coller ; trop forte, elle risque de rompre la suture. Groth propose une progression en huit
+niveaux, de la mobilisation passive protégée jusqu'aux exercices contre résistance. On ne passe au niveau
+suivant que si le tendon le demande. L'auteur précise que ce modèle reste à valider.</p>
+
+<p>Les essais n'ont pas encore permis de trancher. La revue Cochrane de Peters et al. (2021) réunit 17 essais
+et 1 108 patients. Pour les 14 comparaisons étudiées, dont 8 portent sur des programmes d'exercices, elle ne
+trouve que des preuves de très faible certitude, « insuffisantes pour guider la pratique ». Certaines
+questions n'ont même jamais été testées, comme le moment où commencer à bouger ou celui où commencer le
+renforcement.</p>
+
+<h3>1.4 Après une opération : la fracture du radius distal</h3>
+
+<p>La fracture de l'extrémité inférieure du radius est la plus fréquente du membre supérieur, surtout chez
+l'enfant et après 65 ans. Les formes complexes, soit 20 à 50 % des cas, sont opérées par plaque palmaire
+<span class="src">(Collis, 2022)</span>. La plupart des patients reprennent leurs activités en trois à six
+mois, mais une partie garde des séquelles. La raideur touche jusqu'à 35 % des opérés. Dans une cohorte de 187
+patients, 24 % gardent des limitations d'activité. Un syndrome douloureux régional complexe apparaît chez
+environ 9 % des patients. Or la raideur va de pair avec une moins bonne fonction et une qualité de vie plus
+basse <span class="src">(Collis, 2022)</span>.</p>
+
+<p>Bouger tôt aide, au moins au début. D'après la revue de Collis et al. (2020), qui réunit 8 études, une
+mobilisation commencée moins de deux semaines après l'opération donne plus d'amplitude, une meilleure
+fonction et moins de douleur jusqu'à 8 semaines, sans davantage d'effets indésirables. À 26 semaines, les
+écarts ne sont plus significatifs.</p>
+
+<h3>1.5 Ce que ces troubles ont en commun</h3>
+
+<p>Malgré leurs différences, ces trois situations suivent la même logique. Le principal risque est la
+raideur ou l'adhérence, et le remède passe par un mouvement dosé et progressif, adapté au stade de la
+cicatrisation. Le niveau de preuve, en revanche, varie beaucoup. Il est correct pour la mobilisation précoce
+après une fracture opérée. Il reste discuté pour les exercices du canal carpien, et il est faible pour la
+rééducation après sa chirurgie. Pour les tendons fléchisseurs, il est très faible, et la pratique s'appuie
+surtout sur des modèles comme celui de Groth.</p>
+
+<div class="takeaway"><strong>Pour le projet.</strong> Un jeu peut rendre la rééducation plus régulière,
+mais il ne la rendra pas plus efficace si les exercices eux-mêmes n'ont pas fait leurs preuves. Les situations
+où l'effet du mouvement est le mieux établi, comme la fracture du radius opérée, sont donc les terrains les
+plus solides pour évaluer un jeu de rééducation.</div>
+
+<p>Ces trois exemples ne couvrent pas toutes les atteintes de la main (doigts, scaphoïde, pouce, nerfs…).
+C'est un choix assumé : ils suffisent à poser les exigences qu'un jeu de rééducation devra respecter.</p>
+
+<h2>2. Enjeux et défis de la rééducation</h2>
+
+<h3>2.1 Ce qui est en jeu</h3>
+
+<p>La main est l'outil de la préhension : c'est l'opposition du pouce qui permet de saisir et de tenir les
+objets <span class="src">(INRS, 2011)</span>. Une rééducation incomplète touche donc le travail, avec des
+arrêts prolongés et un maintien dans l'emploi menacé <span class="src">(HAS, 2013 ; INRS, 2011)</span>. Elle
+touche aussi la vie quotidienne. Les patients interrogés par Collis et al. (2021) vivent l'arrêt de leurs
+activités habituelles comme une perte, faite de frustration, d'ennui et d'inquiétude pour l'avenir. Ils
+voient dans leur reprise un moteur de la guérison. Pour réussir, la rééducation doit relever quatre défis.</p>
+
+<h3>2.2 Premier défi : doser le mouvement selon la cicatrisation</h3>
+
+<p>Le « protocole prescrit » n'est pas un calendrier universel. Groth (2004) défend une progression guidée
+par la réponse des tissus plutôt que par le temps écoulé. Après une fracture opérée, le délai avant de bouger
+varie de quelques jours à six semaines selon les centres <span class="src">(Collis, 2022)</span>. Quant aux
+« activités légères » souvent recommandées, leur type, leur durée et leur intensité ne sont presque jamais
+précisés : les études obtiennent en moyenne 8,5 sur 24 à la grille TIDieR, qui note la qualité de
+description des interventions <span class="src">(Collis et al., 2020)</span>. Quelques repères existent
+toutefois, comme limiter la force de serrage à environ 17 kg pendant les quatre à six premières semaines
+après une plaque palmaire <span class="src">(Collis, 2022)</span>.</p>
+
+<div class="takeaway"><strong>Pour le projet.</strong> Rester conforme au protocole, c'est respecter une
+enveloppe de gestes et de charges qui évolue avec le stade de cicatrisation et la réponse du patient. Les
+sources décrivent bien cette exigence, mais aucune ne la traduit en règles prêtes à l'emploi.</div>
+
+<h3>2.3 Deuxième défi : que le patient fasse vraiment ses exercices</h3>
+
+<p>Une mauvaise observance limite l'efficacité des exercices et augmente les coûts de prise en charge
+<span class="src">(Jordan et al., 2010 ; Jack et al., 2010)</span>. Son ampleur reste pourtant mal connue, et
+Jack et al. le reconnaissent eux-mêmes. Ils citent deux chiffres anciens tirés de la kinésithérapie en
+général : 14 % des patients ne reviennent pas à leurs rendez-vous, et la non-observance des exercices
+pourrait atteindre 70 % <span class="src">(Sluijs et al., 1993, cité par Jack et al., 2010)</span>. Ce chiffre
+revient dans des revues plus récentes, mais il provient toujours de la même étude
+<span class="src">(Essery et al., 2017)</span>.</p>
+
+<p>En rééducation de la main, les données sont rares mais vont dans le même sens. Dans l'essai de Then et
+al. (2020), mené après une fracture d'un métacarpe, seuls 2 patients sur 10 suivant une kinésithérapie
+classique réalisent au moins 75 % des séances prescrites, et 6 sur 10 en font moins de la moitié. Après une
+fracture du radius, la littérature réunie par Collis (2022) décrit des patients qui hésitent à bouger,
+gardent leur orthèse trop longtemps et font moins d'exercices que prévu.</p>
+
+<p>Encore faut-il pouvoir mesurer cette observance. Il n'existe pas de mesure de référence et chaque
+étude utilise la sienne <span class="src">(Jordan et al., 2010)</span>. Dans la revue de Collis et al.
+(2020), une seule étude sur huit l'a suivie. On ignore donc si les résultats observés tiennent au protocole
+lui-même ou à la façon dont il a été appliqué.</p>
+
+<h3>2.4 Troisième défi : la douleur, la peur et la lassitude</h3>
+
+<p>Pourquoi les patients décrochent-ils ? La revue de Jack et al. (2010), fondée sur 20 études de bonne
+qualité, identifie plusieurs facteurs solidement établis. Le premier est une douleur qui augmente pendant
+l'exercice. Viennent ensuite le manque de confiance du patient en sa capacité à réussir ses exercices,
+que les psychologues appellent un faible « sentiment d'efficacité personnelle », puis l'anxiété, la dépression, le sentiment d'impuissance, un faible soutien social et peu
+d'activité physique avant le traitement. Une revue plus récente, centrée sur les programmes réalisés à
+domicile, confirme le rôle de cette confiance en soi, de la motivation et du soutien social. Elle ajoute un
+point pratique : dans deux études, plus on prescrivait d'exercices, moins les patients les suivaient
+<span class="src">(Essery et al., 2017, 30 études)</span>.</p>
+
+<p>Les patients le disent avec leurs mots. Après une fracture du radius, les premiers mouvements sont
+marqués par l'appréhension et la peur de se faire mal. Chez les plus craintifs, la douleur devient un signal
+pour s'arrêter <span class="src">(Collis et al., 2021, entretiens avec 21 patients)</span>. La répétition,
+enfin, use la motivation : la perte d'intérêt pour des programmes monotones est décrite comme un obstacle à
+la rééducation <span class="src">(Then et al., 2020)</span>.</p>
+
+<p>Ces revues évoquent aussi des leviers : le retour positif, la récompense, des objectifs fixés avec le patient
+et des plans d'action concrets <span class="src">(Jack et al., 2010 ; Essery et al., 2017)</span>. Ce sont
+précisément des mécanismes de jeu, que l'étape 2 examinera.</p>
+
+<h3>2.5 Quatrième défi : mesurer ce que le patient fait réellement</h3>
+
+<p>Les constats précédents convergent. L'observance est rarement mesurée, et chaque étude la mesure à sa
+façon <span class="src">(Jordan et al., 2010 ; Collis et al., 2020)</span>. Les signes cliniques, comme ceux du
+canal carpien, sont subjectifs et ne régressent que partiellement <span class="src">(HAS, 2013)</span>. Or
+certains paramètres décisifs ne se voient qu'avec une mesure objective : le temps pendant lequel le poignet
+bouge réellement, le nombre de répétitions, les positions tenues en fin d'amplitude. Collis et al. (2022) les
+ont mesurés par électrogoniométrie et ont montré qu'une telle mesure est faisable à domicile dès les
+premières semaines. Mesurer devient alors la condition pour vérifier à la fois l'engagement du patient et le
+respect du protocole.</p>
+
+<h2>3. Bilan</h2>
+
+<table class="bilan">
+  <tr><th>Ce que le corpus établit</th><th>Ce qu'il ne permet pas d'affirmer</th></tr>
+  <tr>
+    <td><ul>
+      <li>Les troubles du poignet et de la main sont fréquents et coûteux, en particulier pour le travail
+        (INRS ; HAS).</li>
+      <li>Le risque commun est la raideur, et un mouvement précoce et dosé aide, surtout à court terme
+        après une fracture du radius (Collis et al., 2020 ; Groth).</li>
+      <li>Respecter le protocole, c'est respecter une enveloppe de gestes et de charges propre à chaque
+        patient (Groth ; Collis).</li>
+      <li>La mauvaise observance est un frein reconnu, et elle semble fréquente en rééducation de la main
+        (Jordan ; Jack ; Then).</li>
+      <li>La douleur, la peur, le manque de confiance et la lassitude font décrocher (Jack ; Essery ; Collis ;
+        Then).</li>
+    </ul></td>
+    <td><ul>
+      <li>Un taux d'abandon fiable et récent en rééducation de la main : seul un petit essai de 19 patients
+        le chiffre.</li>
+      <li>Que les exercices du canal carpien soient efficaces, surtout après la chirurgie, ni quel programme
+        d'exercices est le meilleur après une réparation de tendon.</li>
+      <li>Le nombre de répétitions nécessaire à la récupération.</li>
+      <li>Des règles de protocole prêtes à être traduites dans un jeu.</li>
+      <li>Une mesure de référence de l'observance.</li>
+    </ul></td>
+  </tr>
+</table>
+
+<p>La rééducation de la main doit donc apporter une dose de mouvement suffisante et adaptée au stade de
+cicatrisation. Or, à domicile, cette dose est rarement atteinte et presque jamais vérifiée. Une piste
+existe déjà. Chez des patients opérés du poignet, des activités choisies, comme la cuisine ou les tâches
+ménagères, font bouger le poignet 97 % du temps contre 43 % pendant les exercices, avec une amplitude
+équivalente <span class="src">(Collis et al., 2022, essai croisé, 35 patients)</span>. Reste à savoir si un
+cadre ludique bâti sur ces activités familières peut aussi rendre la pratique plus régulière, tout en
+respectant le protocole. C'est l'objet de l'étape 2.</p>
+
+<h2>Références</h2>
+
+<div class="refs">
+  <p>Collis, J. M. (2022). <em>An exploration of the influence of activity and occupation on recovery from a
+    surgically treated distal radius fracture</em> [Thèse de doctorat]. Auckland University of Technology.
+    La thèse reproduit notamment Collis et al. (2021), « The more I do, the more I can do », <em>Disability
+    and Rehabilitation</em> (étude qualitative), et Collis et al. (2022), <em>Journal of Hand Therapy</em>
+    (essai croisé, activités choisies et exercices).</p>
+  <p>Collis, J. M., Signal, N., Mayland, E., &amp; Wright-St Clair, V. (2020). A systematic review of how daily
+    activities and exercises are recommended following volar plating of distal radius fractures and the
+    efficacy and safety of early versus late mobilisation. <em>Hand Therapy, 25</em>, 139–151.</p>
+  <p>Essery, R., Geraghty, A. W. A., Kirby, S., &amp; Yardley, L. (2017). Predictors of adherence to home-based
+    physical therapies: A systematic review. <em>Disability and Rehabilitation, 39</em>(6), 519–534.</p>
+  <p>Groth, G. N. (2004). Pyramid of progressive force exercises to the injured flexor tendon. <em>Journal of
+    Hand Therapy, 17</em>(1), 31–42.</p>
+  <p>Haute Autorité de santé (2013). <em>Syndrome du canal carpien : optimiser la pertinence du parcours
+    patient</em>. Analyse et amélioration des pratiques.</p>
+  <p>INRS (2011, réimpr. 2014). <em>Les troubles musculosquelettiques du membre supérieur (TMS-MS). Guide pour
+    les préventeurs</em>. ED 957, 2<sup>e</sup> éd.</p>
+  <p>Jack, K., McLean, S. M., Moffett, J. K., &amp; Gardiner, E. (2010). Barriers to treatment adherence in
+    physiotherapy outpatient clinics: A systematic review. <em>Manual Therapy, 15</em>(3), 220–228.</p>
+  <p>Jordan, J. L., Holden, M. A., Mason, E. E. J., &amp; Foster, N. E. (2010). Interventions to improve
+    adherence to exercise for chronic musculoskeletal pain in adults. <em>Cochrane Database of Systematic
+    Reviews</em>, (1), CD005956.</p>
+  <p>Page, M. J., O'Connor, D., Pitt, V., &amp; Massy-Westropp, N. (2012). Exercise and mobilisation
+    interventions for carpal tunnel syndrome. <em>Cochrane Database of Systematic Reviews</em>, (6),
+    CD009899.</p>
+  <p>Peters, S., Page, M. J., Coppieters, M. W., Ross, M., &amp; Johnston, V. (2016). Rehabilitation following
+    carpal tunnel release. <em>Cochrane Database of Systematic Reviews</em>, (2), CD004158.</p>
+  <p>Peters, S. E., Jha, B., &amp; Ross, M. (2021). Rehabilitation following surgery for flexor tendon injuries
+    of the hand. <em>Cochrane Database of Systematic Reviews</em>, (1), CD012479.</p>
+  <p>Then, J. W., Shivdas, S., Tunku Ahmad Yahaya, T. S., Ab Razak, N. I., &amp; Choo, P. T. (2020).
+    Gamification in rehabilitation of metacarpal fracture using cost-effective end-user device: A randomized
+    controlled trial. <em>Journal of Hand Therapy, 33</em>, 235–242.</p>
+  <p>Zaheer, S. A., &amp; Ahmed, Z. (2023). Neurodynamic techniques in the treatment of mild-to-moderate carpal
+    tunnel syndrome: A systematic review and meta-analysis. <em>Journal of Clinical Medicine, 12</em>(15), 4888.</p>
+  <p class="note">Sluijs et al. (1993) est cité d'après Jack et al. (2010) et Essery et al. (2017), et n'a pas été lu directement. Les deux
+    essais comparant exercices à domicile et kinésithérapie encadrée après chirurgie du canal carpien
+    (Pomerance et al., 2007 ; Provinciali et al., 2000) sont cités d'après Peters et al. (2016).</p>
+</div>
+
+</body>
+</html>
